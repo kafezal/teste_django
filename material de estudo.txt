@@ -1,0 +1,13 @@
+sites:
+
+site oficial
+-https://docs.djangoproject.com/pt-br/6.1/
+
+python academy
+-https://pythonacademy.com.br/blog/guia-completo-django-2025#arquitetura-mtv-model-template-view
+
+MDN
+-https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Extensions/Server-side/Django/Introduction
+
+Devmedia
+-https://www.devmedia.com.br/django/
