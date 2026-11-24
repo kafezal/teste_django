@@ -11,3 +11,55 @@ MDN
 
 Devmedia
 -https://www.devmedia.com.br/django/
+
+usar o django:
+
+- tive q criar uma maquina virtual(é um ambiente computacional criado por software que funciona como um computador físico completo e isolado, com seu próprio sistema operacional, programas e recursos virtuais) pra em seguida instalar o django
+
+pega o passo a passo-
+* tenha certeza q o python esteja atualizado e esteja no PATH no OS
+
+
+# Criar ambiente virtual
+python -m venv venv
+
+# Ativar no Windows
+venv\Scripts\activate
+
+#instalado o django
+pip install django
+
+# Verificar versão instalada
+python -m django --version
+
+#criando o projeto
+django-admin startproject meu projeto
+
+#visitando projeto
+cd meu projeto
+
+depois de tudo isso se cria a primeira estrutura-
+
+meu_projeto/
+    manage.py
+    meu_projeto/
+        __init__.py
+        settings.py
+        urls.py
+        asgi.py
+        wsgi.py
+
+nisso se deve lembrar de arquivos importantes-
+
+ manage.py - Interface de linha de comando do projeto
+settings.py - Configurações do projeto
+urls.py - Roteamento de URLs
+asgi.py - Configuração ASGI (async)
+wsgi.py - Configuração WSGI (tradicional)
+#WSGI ou ASGI? Desde o Django 3.0 o startproject gera os dois arquivos. WSGI continua sendo o caminho mais simples de deploy; prefira ASGI (com Uvicorn, Daphne ou Hypercorn) quando for aproveitar views assíncronas, conexões longas ou WebSockets.
+
+#pra executar o servidor
+python manage.py runserver
+
+#pra desligar
+ctrl + c
